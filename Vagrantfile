@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "generic/ubuntu2004"
+  config.vm.hostname = "lab1vm"
 
   # Assign a local IP address
   config.vm.network "private_network", ip: "192.168.56.10"
